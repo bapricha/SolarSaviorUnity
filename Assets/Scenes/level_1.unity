@@ -1245,6 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9661075484b20d24289eaca578d8be96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 563829305}
+  planet:
+  - {fileID: 563829305}
   gravityForce: 20
   gravityDistance: 50
