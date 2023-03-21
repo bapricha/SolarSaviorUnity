@@ -18,6 +18,7 @@ public class GravityOrbit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //use boolean to check ditsnace and fix sprite accordingly
         foreach(GameObject g in planet) {
             float dist = Vector3.Distance(gameObject.transform.position, g.transform.position);
             if(dist<8) {
@@ -27,6 +28,9 @@ public class GravityOrbit : MonoBehaviour
               lookAngle=90+Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
               transform.rotation=Quaternion.Euler(0f, 0f, lookAngle);
             }
+            // else if(dist>=8) {
+            //   transform.rotation=Quaternion.Euler(0f, 0f, 0f);
+            // }
         }
     }
 }
