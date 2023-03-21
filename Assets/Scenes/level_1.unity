@@ -1097,6 +1097,7 @@ GameObject:
   - component: {fileID: 1311850083}
   - component: {fileID: 1311850082}
   - component: {fileID: 1311850086}
+  - component: {fileID: 1311850087}
   m_Layer: 0
   m_Name: Waldro-Default
   m_TagString: Untagged
@@ -1211,7 +1212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311850081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.64, y: -2.35, z: 0}
+  m_LocalPosition: {x: -15.26, y: -2.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1230,5 +1231,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dea3387b4dccfd45b365c996d63042b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
-  jumpStrength: 15
+  movementSpeed: 12
+  jumpStrength: 12
+--- !u!114 &1311850087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311850081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9661075484b20d24289eaca578d8be96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet:
+  - {fileID: 563829305}
+  gravityForce: 20
+  gravityDistance: 50
