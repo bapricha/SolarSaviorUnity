@@ -42,7 +42,6 @@ MonoBehaviour:
     y: 43.2
     width: 1536
     height: 780.8
-  m_ShowMode: 4
   m_Title: Inspector
   m_RootView: {fileID: 9}
   m_MinSize: {x: 875, y: 300}
