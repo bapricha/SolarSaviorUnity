@@ -28,7 +28,7 @@ public class GravityOrbit : MonoBehaviour
               lookAngle=90+Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
               transform.rotation=Quaternion.Euler(0f, 0f, lookAngle);
             }
-            // else if(dist>=8) {
+            // if(dist>=8) {
             //   transform.rotation=Quaternion.Euler(0f, 0f, 0f);
             // }
         }
