@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerControls controls;
     private float movement;
+    public bool facingRight;
     private bool isGrounded;
+    public static PlayerController instance;
 
     private void Awake() {
         rb=GetComponent<Rigidbody2D>();
@@ -17,6 +19,8 @@ public class PlayerController : MonoBehaviour
         controls.Player.Movement.performed += ctx => movement = ctx.ReadValue<float>();
         controls.Player.Movement.canceled += _ => movement = 0;
         controls.Player.Jump.started += _ => Jump();
+        facingRight = true;
+        instance = this;
     }
 
     private void OnEnable() => controls.Enable();
@@ -25,10 +29,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(movement<0)
+        if(movement<0){
             transform.localScale = new Vector3(-1, 1, 1);
-        else if(movement>0)
+            facingRight = false;
+        }
+        else if(movement>0){
             transform.localScale = new Vector3(1, 1, 1);
+            facingRight = true;
+        }
+            
     }
 
     private void FixedUpdate() {

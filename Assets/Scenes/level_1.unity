@@ -764,7 +764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154170046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1051607, y: 2.8796654, z: 0}
+  m_LocalPosition: {x: -62.6, y: -6.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -797,6 +797,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.9930296, y: 2.9917083}
   m_EdgeRadius: 0
+--- !u!1 &156205537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156205538}
+  m_Layer: 0
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156205538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156205537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.82, y: -0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1311850085}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &172856585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,6 +2943,7 @@ GameObject:
   - component: {fileID: 1311850086}
   - component: {fileID: 1311850087}
   - component: {fileID: 1311850088}
+  - component: {fileID: 1311850089}
   m_Layer: 0
   m_Name: Waldro-Default
   m_TagString: Untagged
@@ -3031,6 +3063,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 143269352}
+  - {fileID: 156205538}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3048,6 +3081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 12
   jumpStrength: 12
+  facingRight: 0
 --- !u!114 &1311850087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3082,6 +3116,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d809ef775eccfcd4d8a1137efb81e754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1311850089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311850081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f75a99c47008433e90b775fad68b9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingPoint: {fileID: 156205538}
+  bulletPrefab: {fileID: 2719877710447379329, guid: ca7260bb51da749e999ba6bc3e3ba24b, type: 3}
 --- !u!1 &1315700463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3459,7 @@ GameObject:
   - component: {fileID: 1525931991}
   - component: {fileID: 1525931990}
   - component: {fileID: 1525931989}
+  - component: {fileID: 1525931992}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3502,6 +3551,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1525931992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525931987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f75a99c47008433e90b775fad68b9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingPoint: {fileID: 156205538}
+  bulletPrefab: {fileID: 2719877710447379329, guid: ca7260bb51da749e999ba6bc3e3ba24b, type: 3}
 --- !u!1 &1791480234
 GameObject:
   m_ObjectHideFlags: 0
