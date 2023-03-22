@@ -3813,8 +3813,8 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1638231790
-GameObject:
+--- !u!114 &1525931992
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3827,6 +3827,12 @@ GameObject:
   m_EditorClassIdentifier: 
   shootingPoint: {fileID: 156205538}
   bulletPrefab: {fileID: 2719877710447379329, guid: ca7260bb51da749e999ba6bc3e3ba24b, type: 3}
+--- !u!1 &1791480234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1638231791}
@@ -3954,7 +3960,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!1 &1791480234
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
