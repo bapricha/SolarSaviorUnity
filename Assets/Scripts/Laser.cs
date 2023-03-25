@@ -7,7 +7,7 @@ public class Laser : MonoBehaviour
 {
     public float speed;
     private Rigidbody2D rb;
-    public GameObject GreenLaser;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +33,5 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
