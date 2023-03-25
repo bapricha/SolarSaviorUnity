@@ -5,25 +5,19 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float health;
-    [SerializeField]
-    private GameObject purpleParticles;
 
     public void TakeDamage(float damage){
-        // health -= damage;
+        health -= damage;
         if (health <= 0){
-            Instantiate(purpleParticles,transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.CompareTag("Player")){
+            GameControlHeart.health -= 1;
+        }
         
     }
+    
 }
