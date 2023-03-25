@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 19c763f92b6a34ccd88ac354a566651a
+guid: 211187346be164f6a85d65938d3a9070
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - GreenLaser: {fileID: 2719877710447379329, guid: fadb04929eee2c3488ecc633c96ce5c5, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

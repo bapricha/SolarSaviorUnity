@@ -7,6 +7,7 @@ public class Laser : MonoBehaviour
 {
     public float speed;
     private Rigidbody2D rb;
+    public GameObject GreenLaser;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,13 @@ public class Laser : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision){
+    private void OnCollisionEnter2D(Collision2D collision){
+        if (collision.gameObject.CompareTag("Ground")){
+            Destroy(this.gameObject);
+            Instantiate(null, transform.position,transform.rotation);
 
-        Instantiate(null, transform.position,transform.rotation);
-        Destroy(gameObject);
-
+        }
+        
     }
 
     // Update is called once per frame

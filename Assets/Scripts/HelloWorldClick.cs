@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class HelloWorldClick : MonoBehaviour
 {
+    public static int SceneIndex;
     public void OnHelloWorldClick() {
-        SceneManager.LoadScene(1);
+        SceneIndex = 0;
+        SceneIndex++;
+        SceneManager.LoadScene(SceneIndex);
     }
 }
