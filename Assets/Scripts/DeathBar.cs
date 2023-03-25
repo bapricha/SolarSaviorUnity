@@ -5,6 +5,6 @@ using UnityEngine;
 public class DeathBar : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D col){
-        GameControlScript.health -= 1;
+        GameControlHeart.health -= 3;
     }
 }
