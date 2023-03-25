@@ -6,9 +6,9 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AlienBlob-Default-Anim
+  m_Name: Blobby
   serializedVersion: 6
-  m_Legacy: 1
+  m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -48,13 +48,32 @@ AnimationClip:
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 12
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 212311678, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 1231489119, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: -1647077391, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 1767055188, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 1887041117, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 2074438930, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 2086401986, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 1385106682, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: 989988637, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: -1898001364, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: -668454790, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
+    - {fileID: -2140431755, guid: 8ae9bd96f8ffe0946b3c0cf61996940c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
