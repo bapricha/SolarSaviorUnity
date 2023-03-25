@@ -28,6 +28,10 @@ public class Laser : MonoBehaviour
             Instantiate(null, transform.position,transform.rotation);
 
         }
+        else if(collision.gameObject.CompareTag("Enemy")) {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
         
     }
 
