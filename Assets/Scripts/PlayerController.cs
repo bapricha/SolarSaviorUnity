@@ -8,10 +8,11 @@ public class PlayerController : MonoBehaviour
     public float jumpStrength;
     private Rigidbody2D rb;
     private PlayerControls controls;
-    private float movement;
+    public float movement;
     public bool facingRight;
     private bool isGrounded;
     public static PlayerController instance;
+    public Animator animator;
 
     private void Awake() {
         rb=GetComponent<Rigidbody2D>();
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
         controls.Player.Jump.started += _ => Jump();
         facingRight = true;
         instance = this;
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable() => controls.Enable();
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetInteger("movement", (int) movement);
         if(movement<0){
             transform.localScale = new Vector3(-1, 1, 1);
             facingRight = false;
