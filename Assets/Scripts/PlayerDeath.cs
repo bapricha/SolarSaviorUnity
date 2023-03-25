@@ -15,6 +15,8 @@ public class PlayerDeath : MonoBehaviour
         if(collision.gameObject.CompareTag("Deadzone")) {
             transform.position=startPos;
             transform.rotation=startRot;
+            GameControlHeart.health -= 1;
         }
+        
     }
 }

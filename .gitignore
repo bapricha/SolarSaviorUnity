@@ -2,3 +2,6 @@
 Assembly-CSharp.csproj
 Library
 Logs
+Temp
+ProjectSettings
+UserSettings
